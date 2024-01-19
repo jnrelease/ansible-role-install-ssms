@@ -1,0 +1,11 @@
+---
+# tasks file for install_ssms
+- name: Install SQL Server Management Studio
+  win_chocolatey:
+    name: sql-server-management-studio
+    state: latest
+
+- name: Install dbatools
+  win_chocolatey:
+    name: dbatools
+    state: latest
